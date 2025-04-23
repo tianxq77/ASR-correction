@@ -17,9 +17,7 @@ os.environ["PATH"] += os.pathsep + os.path.dirname(ffmpeg_path)
 AudioSegment.ffmpeg = ffmpeg_path
 AudioSegment.ffprobe = ffprobe_path
 
-# 测试路径是否生效
-print("FFmpeg路径:", AudioSegment.ffmpeg)
-print("FFprobe路径:", AudioSegment.ffprobe)
+
 # 初始化Whisper ASR模型（小型模型，可替换为medium/large）
 asr_model = whisper.load_model("tiny")
 path = r"D:\pythonProjects\myASR\data\std_床前明月光.wav"
