@@ -3,7 +3,6 @@ import librosa
 import librosa.display
 import pyworld as pw
 from dtw import dtw
-from pydub import AudioSegment
 import whisper  # 需要安装openai-whisper
 import os
 from pydub import AudioSegment
